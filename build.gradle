@@ -10,6 +10,9 @@ repositories {
     jcenter()
 }
 
+sourceCompatibility = 11
+
+
 dependencies {
     // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
     compile 'org.bouncycastle:bcprov-jdk15on:1.68'
@@ -25,6 +28,8 @@ dependencies {
     runtime 'com.beust:klaxon:5.0.1'
     runtime 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50'
     runtime 'org.jetbrains.kotlin:kotlin-reflect:1.3.61'
+    testImplementation 'org.assertj:assertj-core:3.21.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
 test {
