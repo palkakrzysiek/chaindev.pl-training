@@ -14,7 +14,7 @@ import java.util.Base64;
 // forum.chaindev.pl
 
 public class Token {
-    private String secret = "";
+    private final String secret;
 
     public Token(String secret) {
         this.secret = secret;

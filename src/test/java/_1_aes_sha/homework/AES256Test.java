@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.*;
 class AES256Test {
 
     String pass = "Ala ma kota";
-    String salt = "Sól";
+    byte[] salt = "Sól".getBytes();
     AES256 aes256 = new AES256();
     byte[] iv = "1234567890123456".getBytes(StandardCharsets.US_ASCII);
 
