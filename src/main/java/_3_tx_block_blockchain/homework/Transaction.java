@@ -11,4 +11,8 @@ public class Transaction {
     public Transaction(Integer amount, String to, Sign.SignatureData signature) {
         //fill all the fields
     }
+
+    public String getTxHash() {
+        return txHash;
+    }
 }
